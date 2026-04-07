@@ -88,7 +88,7 @@ function LoginForm() {
           <div className="space-y-1.5">
             <div className="flex justify-between items-center ml-1">
               <label className="text-sm font-semibold text-gray-700 dark:text-slate-300">Password</label>
-              <Link href="#" className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors">
+              <Link href="/forgot-password" title="Forgot Password Link" className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors">
                 Forgot?
               </Link>
             </div>
