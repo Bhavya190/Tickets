@@ -195,47 +195,7 @@ export default function Dashboard() {
           {/* Scrollable Content */}
           <div className="flex-1 overflow-y-auto p-6 space-y-6">
             
-            {/* Hero Card */}
-            <div className="bg-white dark:bg-[#1e293b] rounded-2xl border border-slate-200 dark:border-slate-800 p-6 flex flex-col md:flex-row gap-8 shadow-sm transition-colors">
-              <div className="relative w-full md:w-[240px] aspect-video bg-indigo-100 dark:bg-indigo-900/30 rounded-xl overflow-hidden group cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2000&auto=format&fit=crop" className="w-full h-full object-cover opacity-80 dark:opacity-60 group-hover:scale-105 transition-transform duration-500" alt="Support Tutorial" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <PlayCircle className="w-12 h-12 text-[#4F46E5] dark:text-indigo-400 bg-white dark:bg-slate-800 rounded-full shadow-lg" />
-                </div>
-              </div>
-              
-              <div className="flex-1 flex flex-col justify-between py-1">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                  <div className="space-y-1">
-                    <p className="text-[12px] font-bold text-slate-400">Your Support Email Address</p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[15px] font-bold text-slate-800 dark:text-slate-200">{user?.email || 'support@bolddesk.com'}</span>
-                      <button className="text-[#4F46E5] dark:text-indigo-400 hover:underline text-[13px] font-bold flex items-center gap-1"><Copy className="w-3.5 h-3.5" /> Change</button>
-                    </div>
-                    <p className="text-[11px] text-slate-400 font-medium">Emails sent to this address are converted to tickets.</p>
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-[12px] font-bold text-slate-400">Your Customer Portal URL</p>
-                    <div className="flex items-center gap-2">
-                       <span className="text-[15px] font-bold text-slate-800 dark:text-slate-200">tickets.bolddesk.com</span>
-                       <button className="text-[#4F46E5] dark:text-indigo-400 hover:underline text-[13px] font-bold flex items-center gap-1"><Copy className="w-3.5 h-3.5" /> Change</button>
-                    </div>
-                    <p className="text-[11px] text-slate-400 font-medium">Your customers can use this portal to submit requests.</p>
-                  </div>
-                </div>
 
-                <div className="flex flex-wrap items-center gap-4 mt-6">
-                  <div className="flex items-center gap-2 text-[12px] font-bold text-slate-600 dark:text-slate-400 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3 py-1.5 rounded-lg">
-                    <Clock className="w-4 h-4 text-[#4F46E5] dark:text-indigo-400" /> Trial Ends in 8 days
-                  </div>
-                  <div className="h-4 w-px bg-slate-200 dark:bg-slate-800"></div>
-                  <button className="text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white px-3 py-1.5">Purchase Now</button>
-                  <button className="text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white px-3 py-1.5">Request Demo</button>
-                  <button className="text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white px-3 py-1.5">Contact Support</button>
-                  <button className="bg-[#4F46E5] hover:bg-[#4338CA] text-white text-sm font-bold px-5 py-2 rounded-lg ml-auto transition-colors shadow-lg shadow-indigo-500/20">Get Started</button>
-                </div>
-              </div>
-            </div>
 
             {/* Filter Toggle */}
             <div className="flex items-center justify-between">
